@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/voto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".voto"
+    android:orientation="vertical"
+    android:background="@color/Blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgTRE"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tre"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Qual Prefeito você deseja votar?"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbPrefeito1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:text="Eduardo Paes"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbPrefeito2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:text="Alexandre Ramagem"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbPrefeito3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:text="Carol Sponza "
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbPrefeito4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:text="Cyro Garcia"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbPrefeito5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:text="Henrique Simonard"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnVotar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Votar"
+        android:textColorLink="#176DE9"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
