@@ -20,12 +20,20 @@ class  voto : AppCompatActivity() {
 
         btnVotar.setOnClickListener {
             val selectedPrefeitoId = radioGroupPrefeito.checkedRadioButtonId
-            val selectedPrefeito = findViewById<RadioButton>(selectedPrefeitoId).text.toString()
+            val selectedPrefeito = if (selectedPrefeitoId != -1) {
+                findViewById<RadioButton>(selectedPrefeitoId).text.toString()
+            } else {
+                "Nenhum prefeito selecionado"
+            }
 
             val vereador = editTextVereador.text.toString()
 
             val selectedPartidoId = radioGroupPartido.checkedRadioButtonId
-            val selectedPartido = findViewById<RadioButton>(selectedPartidoId).text.toString()
+            val selectedPartido = if (selectedPartidoId != -1) {
+                findViewById<RadioButton>(selectedPartidoId).text.toString()
+            } else {
+                "Nenhum partido selecionado"
+            }
 
             val intent = Intent(this, resultado::class.java).apply {
                 putExtra("PREFEITO", selectedPrefeito)

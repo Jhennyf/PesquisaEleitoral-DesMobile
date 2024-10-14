@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".voto" />
+        <activity android:name=".resultado" />
     </application>
 
 </manifest>
