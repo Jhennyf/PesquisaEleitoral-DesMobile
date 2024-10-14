@@ -98,13 +98,13 @@
 
 
     <Button
-        android:id="@+id/btnVotar"
+        android:id="@+id/btnProximo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:text="Votar"
+        android:text="Próximo"
         android:textColorLink="#176DE9"
         android:textSize="20sp" />
 
